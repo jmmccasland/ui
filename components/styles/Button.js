@@ -63,7 +63,7 @@ const Button = props => {
       <StyledLink className={variant}>
         <Link href={href}>
           <a>
-            {props.children} goes to {href}
+            {props.children}
           </a>
         </Link>
       </StyledLink>
