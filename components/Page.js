@@ -45,13 +45,26 @@ injectGlobal`
 
   body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: ${theme.silver};
+    color: ${theme.black};
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  button {
+    background: none;
+    border: 0;
+    cursor: pointer;
   }
 
   a {
     color: inherit;
-    text-decoration: none;
+	  text-decoration: none;
   }
 `;
 

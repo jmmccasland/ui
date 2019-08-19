@@ -38,16 +38,6 @@ const Tours = props => (
     </Heading>
 
     <ToursList />
-    {/* <CTA>
-      <h3>Create your first tour</h3>
-      <Button 
-        as="link"
-        href="/"
-        variant="primary"
-      >
-        Get Started
-      </Button>
-    </CTA> */}
   </Section>
 );
 

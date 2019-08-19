@@ -20,16 +20,9 @@ const StyledCard = styled.div`
     color: ${props => props.theme.disabled_txt};
     font-size: ${props => props.theme.xs};
   }
-
-  .space {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: initial;
-  }
 `;
 
-const Card = ( {children, title, info} ) => {
+const Card = ( {children, title, info } ) => {
   return (
     <StyledCard>
       {title ? (

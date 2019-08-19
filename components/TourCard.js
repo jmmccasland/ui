@@ -6,6 +6,26 @@ import styled from 'styled-components';
 import Card from './styles/Card';
 import Popover from './Popover';
 
+const StyledContent = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .title {
+    margin: 0 0 2px;
+    font-weight: bold;
+    font-size: ${props => props.theme.reg};
+    color: ${props => props.theme.black};
+  }
+
+  .dates {
+    margin: 0;
+    font-weight: bold;
+    font-size: ${props => props.theme.reg};
+    color: ${props => props.theme.disabled_txt};
+  }
+`;
+
 class TourCard extends Component {
   static propTypes = {
     tour: PropTypes.object.isRequired,
@@ -24,17 +44,16 @@ class TourCard extends Component {
     const { tour } = this.props;
 
     return (
-      <Card className="tour-card">
-        <div className="card__header--space">
+      <Card>
+        <StyledContent>
           <div>
-            <h3 className="title">{tour.title}</h3>
+            <h3 className="title">{tour.name}</h3>
             <p className="dates">Dates TBD</p>
           </div>
           <button onClick={() => this.togglePopover(true)}>
-            {/* <img src={menuIcon} alt="Open tour settings."/> */}
-            Settings
+            <img src="/static/icons/dots.svg" alt="Open tour settings."/>
           </button>
-        </div>
+        </StyledContent>
         {showPopover && (
           <Popover title="Tour Actions" close={() => this.togglePopover(false)}>
             <Link href={`/tours/${tour.id}/edit`}>

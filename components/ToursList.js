@@ -16,6 +16,8 @@ const ALL_TOURS_QUERY = gql`
 `;
 
 const StyledToursList = styled.div`
+  margin-top: ${props => props.theme.gutter};
+
   > * + * {
     margin-top: ${props => props.theme.gutter};
   }
