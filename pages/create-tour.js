@@ -1,26 +1,15 @@
-// import CreateTourForm from '../../components/forms/create-tour-form';
-import Modal from '../components/styles/Modal';
+import Section from '../components/styles/Section';
+import Card from '../components/styles/Card';
+import CreateTourForm from '../components/CreateTourForm';
 
 class CreateTour extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.close = this.close.bind(this);
-  }
-
-  close() {
-    // this.props.history.push(`/tours`);
-  }
-
   render() {
     return (
-      <Modal 
-        title="Create Tour"
-        close={this.close}
-      >
-        {/* <CreateTourForm /> */}
-        hello
-      </Modal>
+      <Section withContainer>
+        <Card title="Create Tour">
+          <CreateTourForm />
+        </Card>
+      </Section>
     );
   }
 }
