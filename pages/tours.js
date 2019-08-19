@@ -1,7 +1,8 @@
 import Link from 'next/link';
+import styled from 'styled-components';
+import ToursList from '../components/ToursList';
 import Section from '../components/styles/Section';
 import Button from '../components/styles/Button';
-import styled from 'styled-components';
 
 const Heading = styled.div`
   display: flex;
@@ -36,7 +37,8 @@ const Tours = props => (
       </Link>
     </Heading>
 
-    <CTA>
+    <ToursList />
+    {/* <CTA>
       <h3>Create your first tour</h3>
       <Button 
         as="link"
@@ -45,7 +47,7 @@ const Tours = props => (
       >
         Get Started
       </Button>
-    </CTA>
+    </CTA> */}
   </Section>
 );
 
