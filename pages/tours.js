@@ -32,7 +32,7 @@ const Tours = props => (
   <Section withContainer>
     <Heading>
       <h2>Tours</h2>
-      <Link href="/">
+      <Link href="/create-tour">
         <a>Add a tour</a>
       </Link>
     </Heading>
