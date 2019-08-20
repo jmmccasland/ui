@@ -13,6 +13,7 @@ const StyledPopover = styled.div`
   letter-spacing: 0;
   color: #8b8b8b;
   box-shadow: 1px 2px 24px rgba(0, 0, 0, 0.09);
+  z-index: 999;
 
   .heading {
     margin: 0 16px;
@@ -46,11 +47,9 @@ class Popover extends React.Component {
   }
 
   handleClick = (ev) => {
-
     if (this.node.contains(ev.target)) {
       return;
     }
-
     this.props.close();
   }
 
