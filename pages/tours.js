@@ -2,7 +2,6 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import ToursList from '../components/ToursList';
 import Section from '../components/styles/Section';
-import Button from '../components/styles/Button';
 
 const Heading = styled.div`
   display: flex;
