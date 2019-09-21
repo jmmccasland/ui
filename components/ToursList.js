@@ -6,7 +6,7 @@ import TourCard from './TourCard';
 
 const ALL_TOURS_QUERY = gql`
   query ALL_TOURS_QUERY {
-    tours(orderBy: createdAt_ASC) {
+    tours(orderBy: createdAt_DESC) {
       id
       name
       startDate
